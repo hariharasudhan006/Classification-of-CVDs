@@ -1,0 +1,46 @@
+a{
+    text-decoration: None;
+}
+a:visited{
+    color: black;
+}
+.nav-div{
+    margin: 0;
+    background: #b9b9b9;
+    border-radius: 5px;
+
+}
+nav{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.active{
+    color: blue;
+}
+
+.nav-tab{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.nav-tab-last{
+    margin-right: 50px;
+}
+
+.home-heading{
+    display: flex;
+    margin: 0;
+    justify-content: center;
+}
+
+.home-content-para{
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: justify;
+    font-size: 20px;
+}

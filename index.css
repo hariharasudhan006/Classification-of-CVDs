@@ -31,16 +31,89 @@ nav{
 
 .home-heading{
     display: flex;
+    color: white;
     margin: 0;
     justify-content: center;
 }
 
 .home-content-para{
     display: flex;
+    color: white;
+    margin: 0;
+    align-items: center;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: center;
+    font-size: 26px;
+}
+.home-content{
+    margin: 50px;
+    background-color: rgb(15, 0, 0);
+    border: 1px solid black;
+    opacity: 0.6;
+}
+.predict-content{
+    display: flex;
+    color: white;
     margin: 0;
     justify-content: center;
     padding-left: 100px;
     padding-right: 100px;
-    text-align: justify;
+    text-align: center;
     font-size: 20px;
+}
+.btn { 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 20px;
+}
+.btn-choose {
+    background-color: #4CAF50;
+}
+.btn-predict{
+    background-color: blue;
+}
+body{
+    background-image: url("https://i.pinimg.com/originals/a9/73/1c/a9731c088de6323bc4640fc7258177ef.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+.info-content{
+    margin: 50px;
+    background-color: white;
+    opacity: 0.8;
+    display: flex;
+}
+#left,#right{
+    flex: 50%;
+    margin: 20px;
+}
+.info-content-heading{
+    color: black;
+    margin: 0;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 26px;
+}
+.info-content-para{
+    color: black;
+    margin: 0;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: justify;
+    font-size: 26px;
 }

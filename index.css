@@ -87,15 +87,27 @@ body{
     background-attachment: fixed;
 }
 .info-content{
-    margin: 50px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding: 10px;
     background-color: white;
     opacity: 0.8;
     display: flex;
 }
-#left,#right{
+
+
+.content,.image{
     flex: 50%;
-    margin: 20px;
+    margin: 30px;
 }
+
+.image{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .info-content-heading{
     color: black;
     margin: 0;
@@ -109,7 +121,6 @@ body{
 }
 .info-content-para{
     color: black;
-    margin: 0;
     font-family: 'Dancing Script', cursive;
     font-family: 'Edu NSW ACT Foundation', cursive;
     padding-left: 100px;
@@ -118,7 +129,5 @@ body{
     font-size: 20px;
 }
 .info-content-picture{
-    padding: 2%;
-    text-align: center;
-    vertical-align: middle;
+    margin: 0;
 }

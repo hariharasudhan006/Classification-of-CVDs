@@ -87,12 +87,12 @@ body{
     background-attachment: fixed;
 }
 .info-content{
-    margin-top: 16px;
-    margin-bottom: 16px;
+    margin : 30px;
     padding: 10px;
     background-color: white;
     opacity: 0.8;
     display: flex;
+    border-radius: 16px;
 }
 
 
@@ -106,6 +106,7 @@ body{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    padding: 30px;
 }
 
 .info-content-heading{
@@ -129,5 +130,5 @@ body{
     font-size: 20px;
 }
 .info-content-picture{
-    margin: 0;
+    margin:0;
 }

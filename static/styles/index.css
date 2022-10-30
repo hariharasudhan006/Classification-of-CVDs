@@ -6,7 +6,7 @@ a:visited{
 }
 .nav-div{
     margin: 0;
-    background: #b9b9b9;
+    background: #ffffff;
     border-radius: 5px;
 
 }
@@ -31,9 +31,10 @@ nav{
 
 .home-heading{
     display: flex;
-    color: white;
+    color: #000000;
     margin: 0;
     justify-content: center;
+    font-family: 'Gabriola', sans-serif;
 }
 
 .home-content-para{
@@ -41,8 +42,7 @@ nav{
     color: white;
     margin: 0;
     align-items: center;
-    font-family: 'Dancing Script', cursive;
-    font-family: 'Edu NSW ACT Foundation', cursive;
+    font-family: 'Gabriola', sans-serif;
     padding-left: 100px;
     padding-right: 100px;
     text-align: center;
@@ -50,9 +50,9 @@ nav{
 }
 .home-content{
     margin: 50px;
-    background-color: rgb(15, 0, 0);
+    background-color: rgb(79, 78, 78);
     border: 1px solid black;
-    opacity: 0.6;
+    border-radius: 16px;
 }
 .predict-content{
     display: flex;
@@ -81,15 +81,10 @@ nav{
 .btn-predict{
     background-color: blue;
 }
-body{
-    background-image: url("https://i.pinimg.com/originals/a9/73/1c/a9731c088de6323bc4640fc7258177ef.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-}
 .info-content{
     margin : 30px;
     padding: 10px;
-    background-color: white;
+    background-color: rgb(66, 66, 66);
     opacity: 0.8;
     display: flex;
     border-radius: 16px;
@@ -110,24 +105,21 @@ body{
 }
 
 .info-content-heading{
-    color: black;
-    margin: 0;
-    font-family: 'Dancing Script', cursive;
-    font-family: 'Edu NSW ACT Foundation', cursive;
+    color: #ffffff;
+    font-family: 'Gabriola', sans-serif;
     padding-left: 100px;
     padding-right: 100px;
     text-align: center;
-    font-size: 26px;
-    margin-bottom: 20px;
+    font-size: 30px;
+    margin: 0 0 20px;
 }
 .info-content-para{
-    color: black;
-    font-family: 'Dancing Script', cursive;
-    font-family: 'Edu NSW ACT Foundation', cursive;
+    color: #ffffff;
+    font-family: 'Gabriola', sans-serif;
     padding-left: 100px;
     padding-right: 100px;
     text-align: justify;
-    font-size: 20px;
+    font-size: 26px;
 }
 .info-content-picture{
     margin:0;

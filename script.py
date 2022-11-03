@@ -1,8 +1,9 @@
 import os
 import numpy as np
-from flask import Flask, request, render_template, send_from_directory
+from flask import Flask, request, render_template, send_from_directory, make_response
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import image
+from predict_cvd import PredictCVD
 
 CVDs = [
     'Left Bundle Branch Block',
@@ -27,20 +28,21 @@ def info():
     return render_template("info.html")
 
 
+@app.route("/predict", methods=['GET', 'POST'])
 def predict_cvd():
-    pass
+    if request.method == 'POST':
+        print(request.files)
+        request.files['image'].save("ecg.png")
+        predictor = PredictCVD()
+        response = make_response("response")
+        response.data = "Hello"
+        predictor.predict("ecg.png")
+        return response
+    return "Method not allowed"
 
 
 @app.route("/predict.html", methods=['GET', 'POST'])
 def predict():
-    if request.method == 'POST':
-        request.files['image'].save("ecg.png")
-        img = np.expand_dims(image.img_to_array(
-            image.load_img("ecg.png", target_size=(64, 64), color_mode="grayscale")), axis=0)
-        model = load_model("model_30_oct_22.h5")
-        prediction = model.predict(img)
-        print("Prediction:", prediction)
-        return CVDs[list(prediction[0]).index(1)]
     return render_template("predict.html")
 
 

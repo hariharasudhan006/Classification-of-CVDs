@@ -18,12 +18,12 @@
            <h1>ECG Arrhythmia Classification</h1> 
         </div>
         <div class="predict-content">
-            <form action="{{ url_for('predict') }}" method="post" enctype="multipart/form-data">
+            <form id="predict_form">
                 <input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;" />
                 <label for="file" class="btn btn-choose">Choose</label><br/>
                 <img id="output" width="200" height="200" style="border: none;"/><br/>
-                <input class="btn btn-predict" type="submit" value="Predict"/>
             </form>
+            <button class="btn btn-predict">Predict</button>
         </div>
     </body>
 </html>
